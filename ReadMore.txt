@@ -1,0 +1,8 @@
+Step 1: Create Database Tables (Schema)
+└── alembic upgrade head
+
+Step 2: Populate Initial Foundation (One-time)
+└── python -m app.core.seed
+
+Step 3: Run the Application (Daily use)
+└── uvicorn main:app --reload
